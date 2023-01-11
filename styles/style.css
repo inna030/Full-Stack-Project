@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  padding: 0.5rem 0.75rem;
+  border: none;
+  margin: 1rem 0.5rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+body {
+  background-color: #272727;
+  color: white;
+  font-family: "Hubballi", cursive;
+}
+
+header nav {
+  -webkit-box-shadow: 0 8px 6px -6px black;
+          box-shadow: 0 8px 6px -6px black;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul li {
+  padding: 1rem;
+}
+
+header nav ul li a {
+  font-size: 1.15rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: yellow;
+}
+
+main section.main-part {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section.main-part h1 {
+  font-size: 4rem;
+  margin-top: 1rem;
+}
+
+main section.main-part p {
+  font-size: 1.15rem;
+}
+
+main section.main-part div.all-inputs form input,
+main section.main-part div.all-inputs form select {
+  font-size: 1.05rem;
+  padding: 0.5rem;
+  border: 0.15px solid #272715;
+  margin: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+main section.main-part div.all-inputs form input.class-credit {
+  width: 7%;
+}
+
+main section.main-part div.all-inputs form button {
+  border: none;
+  cursor: pointer;
+  background-color: #272727;
+}
+
+main section.main-part div.all-inputs form button i {
+  font-size: 1.25rem;
+  pointer-events: none;
+  color: white;
+}
+
+main section.main-part button.plus-btn {
+  background-color: #272727;
+  border: none;
+  width: 1.5rem;
+  margin: 1rem 0rem;
+  cursor: pointer;
+}
+
+main section.main-part button.plus-btn i {
+  font-size: 2.5rem;
+  color: white;
+}
+
+main section.main-part div.result {
+  width: 200px;
+  height: 200px;
+  border: 3px solid red;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-animation-name: border_color;
+          animation-name: border_color;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+main section.main-part div.result p {
+  margin-top: 15px;
+}
+
+main section.main-part div.result h2#result-gpa {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.remove {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+@-webkit-keyframes scaleUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes scaleDown {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes scaleDown {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@-webkit-keyframes border_color {
+  0% {
+    border-color: red;
+  }
+  33% {
+    border-color: limegreen;
+  }
+  66% {
+    border-color: yellow;
+  }
+}
+
+@keyframes border_color {
+  0% {
+    border-color: red;
+  }
+  33% {
+    border-color: limegreen;
+  }
+  66% {
+    border-color: yellow;
+  }
+}
+/*# sourceMappingURL=style.css.map */
